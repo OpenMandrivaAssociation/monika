@@ -7,7 +7,6 @@ Release: %mkrel 3
 Source: %{name}_%{version}-%{release_id}.tar.bz2
 License: GPL
 URL:http://ka-tools.sourceforge.net/
-BuildRoot: %{_tmppath}/build-%{name}_%{version}
 Group: Monitoring
 Requires: perl-AppConfig, perl-CGI
 BuildArchitectures: noarch
