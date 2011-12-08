@@ -28,9 +28,9 @@ mkdir -p $RPM_BUILD_ROOT/%{_var}/www/cgi-bin/%{name}
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
 mkdir -p $RPM_BUILD_ROOT/%{_sysconfdir}/
 
-cp -a $RPM_BUILD_DIR/%{name}-%{version}/monika.cgi $RPM_BUILD_ROOT/%{_var}/www/cgi-bin
-cp -a $RPM_BUILD_DIR/%{name}-%{version}/%{name}/*.pm $RPM_BUILD_ROOT/%{_var}/www/cgi-bin/%{name}
-cp -a $RPM_BUILD_DIR/%{name}-%{version}/monika.conf $RPM_BUILD_ROOT/%{_sysconfdir}/
+cp -a %{_builddir}/%{name}-%{version}/monika.cgi $RPM_BUILD_ROOT/%{_var}/www/cgi-bin
+cp -a %{_builddir}/%{name}-%{version}/%{name}/*.pm $RPM_BUILD_ROOT/%{_var}/www/cgi-bin/%{name}
+cp -a %{_builddir}/%{name}-%{version}/monika.conf $RPM_BUILD_ROOT/%{_sysconfdir}/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
