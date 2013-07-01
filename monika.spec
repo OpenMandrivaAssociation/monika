@@ -1,6 +1,6 @@
 %define release_id 2
 
-Summary: Monika PBS monitor tools
+Summary: PBS monitor tools
 Name: monika
 Version: 0.4.4
 Release: %mkrel 6
