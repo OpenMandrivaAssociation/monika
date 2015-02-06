@@ -3,7 +3,7 @@
 Summary: PBS monitor tools
 Name: monika
 Version: 0.4.4
-Release: 7
+Release: 8
 Source: %{name}_%{version}-%{release_id}.tar.bz2
 License: GPL
 URL:http://ka-tools.sourceforge.net/
